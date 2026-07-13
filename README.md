@@ -1,8 +1,10 @@
-# codex-peer
+# Codex Peer for Claude Code
 
 A [Claude Code](https://claude.com/claude-code) skill that lets Claude work with the
 [OpenAI Codex CLI](https://developers.openai.com/codex) as a **peer collaborator** —
-two frontier models on one task list instead of one.
+two frontier models on one task list instead of one. Claude holds the context and
+orchestrates; Codex gets dispatched at full intelligence, in parallel, on the work it's
+measurably best at.
 
 ## How it works
 
@@ -29,7 +31,8 @@ itself and says so — nothing silently degrades.
 Requirements: Claude Code, plus the Codex CLI installed and logged in (`codex login`).
 
 ```bash
-git clone git@github.com:khapham7165/codex-peer.git ~/.claude/skills/codex-peer
+# the skill installs under its skill name, codex-peer
+git clone https://github.com/khapham7165/claude-code-codex-peer.git ~/.claude/skills/codex-peer
 ```
 
 Optional — also register Codex as an MCP server so it's available as a tool from session
